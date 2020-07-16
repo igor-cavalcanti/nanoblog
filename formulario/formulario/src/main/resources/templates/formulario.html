@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <title>Cadastro</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="#" th:action="@{/pessoa}" th:object="${pessoa}" method="post">
+        <p>Idade: <input type="text" th:field="*{idade}" /></p>
+        <p>Nome: <input type="text" th:field="*{nome}" /></p>
+        <p><input type="submit" value="Enviar" /></p>
+    </form>
+</body>
+
+</html>

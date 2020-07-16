@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <title>Cadastro</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <h1>Resposta</h1>
+    <p th:text="'Nome: ' + ${pessoa.nome}" />
+    <p th:text="'Idade: ' + ${pessoa.idade}" />
+    <a href="/pessoa">Novo Cadastro</a>
+</body>
+
+</html>
